@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function downloadResume() {
 
-    var resumePath = 'file:///C:/Users/m/Downloads/Km%20Neetu%20Singh-Cap02_47-Frontend%20Developer%20(2).pdf';
+    var resumePath = 'https://drive.google.com/file/d/1DrFHkwztHpHOfy9sPBtv_l4hEgvMP0KN/view';
 
 
     var link = document.createElement('a');
