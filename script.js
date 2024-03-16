@@ -47,11 +47,11 @@ window.onscroll = () => {
 
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
-    function openLive2() {
+function openLive2() {
     let livelink2 = "https://incomparable-cupcake-0fd9e6.netlify.app/";
     window.open(livelink2, '_blank');
 }
- function openCode2() {
+function openCode2() {
     let code2 = "https://github.com/Neetsin/Javascript";
     window.open(code2, '_blank');
 }
@@ -76,14 +76,14 @@ function openLive() {
 function openCode() {
     window.open("https://github.com/Neetsin", "_blank");
 }
-function openCode3(){
+function openCode3() {
     let code3 = "https://github.com/Neetsin/BestbuyClone";
-    window.open (code3,"_blank");
+    window.open(code3, "_blank");
 }
 
-function openLive3(){
+function openLive3() {
     let Live3 = "https://65e5d1a56b9d3d2446bc40a2--dainty-tiramisu-f10af7.netlify.app/";
-    window.open(Live3,"_blank");
+    window.open(Live3, "_blank");
 }
 
 
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function downloadResume() {
 
-    var resumePath = 'https://drive.google.com/file/d/1DrFHkwztHpHOfy9sPBtv_l4hEgvMP0KN/view';
+    var resumePath = 'file:///C:/Users/m/Downloads/Km%20Neetu%20Singh-Cap02_47-Frontend%20Developer%20(2).pdf';
 
 
     var link = document.createElement('a');
@@ -130,6 +130,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
+    });
+});
+// Arrow button element
+let arrowButton = document.querySelector('.footer-iconTop a');
+
+
+arrowButton.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    // Scroll smoothly to the top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
 });
 
