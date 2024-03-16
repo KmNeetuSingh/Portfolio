@@ -82,7 +82,7 @@ function openCode3() {
 }
 
 function openLive3() {
-    let Live3 = "https://65e5d1a56b9d3d2446bc40a2--dainty-tiramisu-f10af7.netlify.app/";
+    let Live3 = "https://dainty-tiramisu-f10af7.netlify.app/";
     window.open(Live3, "_blank");
 }
 
