@@ -886,8 +886,8 @@ section:nth-child(odd) .animate.scroll,
     margin-bottom: 30px;
     border: 1px solid var(--main-color);
     border-radius: 8px;
-    width : 70%;
-    max-height: 250px;
+    /* width : 60%; */
+    max-height: 200px;
     color: white;
     background-color: var(--second-bg-color);
     

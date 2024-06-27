@@ -63,12 +63,12 @@
                 
                 <span class="animate" style="--i:6;"></span>
             </div>
-                <div class="abut-img" id="abut-img">
+                <!-- <div class="abut-img" id="abut-img">
                 <img src="images/Main.jpeg" alt="Description of the image"
                     style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: .2rem solid var(--main-color);">
 
-
-            </div>
+ -->
+            <!-- </div> -->
         </div>
         <div class="home-imgHover"></div>
         <span class="animate home-img" style="--i:7;"></span>
@@ -79,7 +79,7 @@
         <h1 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
 
             <div class="about-img">
-                <img src="https://media.licdn.com/dms/image/D5603AQFhnCj5hOIOHA/profile-displayphoto-shrink_200_200/0/1705851314844?e=1715212800&v=beta&t=09ObXsS9ngQO5IM16NKEyGMAP-sqNJ0eRMRcN_EZs8c"
+                <img src="images/main.PNG"
                     alt="main">
                 <span class="circle-spin"></span>
                 <span class="animate scroll" style="--i:2;"></span>
@@ -144,14 +144,21 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
-                            <h3>Ecom-Express</h3>
+                            <div class="year"><i class='bx bxs-calendar'></i> 2024 to present </div>
+                            <h3>TechnoHacks EduTech </h3>
+                            <p>"Here I join as a Web developer Intern"</p>
+                        </div>
+                    </div> <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i>2022 - 2023</div>
+                                <h3>Ecom-Express</h3>
                             <p>"In my recent role as Associate at Ecom Express, leading the inbound team, I've mastered
                                 the art of orchestrating seamless operations. Navigating the complexities of efficient
                                 logistics management, I've honed team management skills, delved into data analysis, and
                                 served as a team leader with finesse."</p>
+                            </div>
                         </div>
-                    </div>
 
                     <span class="animate scroll" style="--i:6;"></span>
                 </div>
@@ -284,10 +291,7 @@
                 <h1 class="project-name">Employee Records</h1>
                 <img src="./images/Capture.PNG" alt="Project Image 3">
                 <div class="section-content">
-                    <p>Transform workforce dynamics effortlessly using our web app powered by JavaScript. Seamlessly
-                        navigate updates, intuitively assign roles, and simplify deletions. Dive into advanced
-                        features—sorting and data validation—for unparalleled efficiency and precision. Revolutionize
-                        your workforce management experience with the JavaScript magic behind our Employee Hub.</p>
+                    <p>Revolutionize your workforce management experience with the JavaScript magic behind our Employee Hub.</p>
                 </div>
                 <div class="buttons">
                     <button class="button" onclick="openLive2()">Live ▶️</button>
@@ -308,10 +312,7 @@
                 <img src="./images/tempsnip.png" alt="Project Image 4">
                 <div class="section-content">
                     <p>Immerse myself in a top-notch shopping experience with our meticulously crafted BestBuy clone
-                        using React. Enjoy a sleek interface, seamless navigation, and a vast array of products. This
-                        clone mirrors BestBuy's essence, offering users a familiar and user-friendly platform for online
-                        shopping. Dive into the world of React-powered innovation, where functionality meets style,
-                        delivering the BestBuy experience with a touch of modern web development.</p>
+                        using React.</p>
                 </div>
                 <div class="buttons">
                     <button class="button" onclick="openLive3()">Live ▶️</button>
@@ -341,45 +342,45 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="e7a59d63-e507-4470-9c46-54be60abe438">
+        
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" name="name" placeholder="Full Name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                     <span class="focus"></span>
                 </div>
-
                 <span class="animate scroll" style="--i:3;"></span>
             </div>
+        
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="number" name="mobile" placeholder="Mobile Number" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" name="subject" placeholder="Email Subject" required>
                     <span class="focus"></span>
                 </div>
-
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
-
+        
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
-
                 <span class="animate scroll" style="--i:7;"></span>
             </div>
-
+        
             <div class="btn-box btns">
                 <button type="submit" class="btn">Submit</button>
-
                 <span class="animate scroll" style="--i:9;"></span>
             </div>
         </form>
+        
     </section>
 
     <!-- footer design -->
