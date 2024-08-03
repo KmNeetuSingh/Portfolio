@@ -373,8 +373,9 @@ span {
 
 .about-content p {
     position: relative;
-    font-size: 1.8rem;
-    margin: auto;
+    margin: 5%;
+    font-size: calc(1rem + 1vw); 
+    padding: 10px;     
 }
 
 .btn-box.btns {
