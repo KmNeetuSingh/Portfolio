@@ -186,6 +186,8 @@ section {
 .btn-box {
     position: relative;
     display: flex;
+    align-self: self-start;
+    flex-direction: column;
     justify-content: space-between;
     width: 40.5rem;
     height: 6rem;
@@ -211,6 +213,8 @@ section {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    align-self: flex-start; 
+}
 }
 
 .btn-box .btn:hover {
