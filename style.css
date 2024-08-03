@@ -187,9 +187,9 @@ section {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 34.5rem;
-    height: 5rem;
-    padding:5px;
+    width: 40.5rem;
+    height: 6rem;
+    padding:10px;
     margin:2%;
 }
 
