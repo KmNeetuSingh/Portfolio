@@ -17,16 +17,18 @@
     --text-color: #ededed;
     --main-color: #00abf0;
 }
-.main{
-    display:flex;
+
+.main {
+    display: flex;
 }
+
 .abut-img {
-    position: absolute; 
-    top: 50%; /* Vertical center */
-    right:2%; /* Align to the right side of the screen */
-    transform: translateY(-50%); /* Adjust to vertically center */
-    width: 35rem; /* Set your desired width */
-    height: 30rem; /* Set your desired height */
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 50rem;
+    height: 40rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -34,12 +36,19 @@
 }
 
 .abut-img img {
+    display: none;
     width: 90%;
     height: 90%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
 
+/* Show the image only when the screen size is at least 1024px */
+@media (min-width: 1024px) {
+    .abut-img img {
+        display: block;
+    }
+}
 
 html {
     font-size: 70.5%;
@@ -123,7 +132,7 @@ section {
 .home-content h1 {
     position: relative;
     display: inline-block;
-    font-size: 7.12rem; /* change here */
+    font-size: 7.12rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -138,7 +147,6 @@ section {
 }
 
 .home-content .text-animate h3 {
-    /* change here */
     font-size: 3.05rem;
     font-weight: 700;
     color: transparent;
@@ -375,29 +383,28 @@ span {
 
 .dropdown {
     position: absolute;
-    top: -40%; 
+    top: -40%;
     left: 40%;
     transform: translateY(-300%);
-    background-color: #3498db; 
-    border: 1px solid #2c3e50; 
+    background-color: #3498db;
+    border: 1px solid #2c3e50;
     padding: 20px;
     display: none;
     z-index: 1;
-    filter: blur(10px); 
-    transition: opacity 0.3s ease; 
+    filter: blur(10px);
+    transition: opacity 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
 }
 
 .section:hover .dropdown {
     display: block;
     color: black;
-    filter: blur(0); 
+    filter: blur(0);
     opacity: 1;
-    top: calc(40% + 20px); 
+    top: calc(40% + 20px);
 }
 
-/* Additional styling for a more modern look */
 .section {
     position: relative;
     cursor: pointer;
@@ -815,44 +822,48 @@ section:nth-child(odd) .animate.scroll,
     width: 0;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     color: var(--second-bg-color);
     background: var(--main-color);
-  }
-  
+}
+
 ::selection {
     color: var(--second-bg-color);
     background: var(--main-color);
-  }
+}
 
 
 
 
-  /* Project section */
-  .container {
+/* Project section */
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     position: relative;
-  }
-  .heading {
+}
+
+.heading {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
     color: var(--main-color);
-  }
-  .section-container {
+}
+
+.section-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px 20px;
     width: 70%;
-   
+
     margin-top: 0px;
-  }
-  .section {
+}
+
+.section {
     border: 2px solid var(--main-color);
     width: calc(50% - 20px);
     box-sizing: border-box;
@@ -865,19 +876,22 @@ section:nth-child(odd) .animate.scroll,
     margin-bottom: 30px;
     position: relative;
     border-radius: 8px;
-    transition: filter 0.3s ease; 
-  }
-  .section img {
+    transition: filter 0.3s ease;
+}
+
+.section img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
-  }
-  .project-name {
+}
+
+.project-name {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  .section-content {
+}
+
+.section-content {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -890,9 +904,10 @@ section:nth-child(odd) .animate.scroll,
     max-height: 200px;
     color: white;
     background-color: var(--second-bg-color);
-    
-  }
-  .buttons {
+
+}
+
+.buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -901,8 +916,9 @@ section:nth-child(odd) .animate.scroll,
     left: 0;
     padding: 10px;
     box-sizing: border-box;
-  }
-  .button {
+}
+
+.button {
     background-color: #ddd;
     border: none;
     padding: 5px 10px;
@@ -910,7 +926,7 @@ section:nth-child(odd) .animate.scroll,
     cursor: pointer;
     display: flex;
     align-items: center;
-  }
+}
 
 /* Style for the Project dropdown container */
 .project-dropdown {
@@ -958,78 +974,167 @@ section:nth-child(odd) .animate.scroll,
     background-color: #f0f0f0;
 }
 
-/* Your existing CSS code... */
-
 #section4:hover .project-dropdown {
     opacity: 1;
     transform: translate(-50%, 0);
 }
 
 
-    
-  .section:hover .dropdown {
+
+.section:hover .dropdown {
     display: block;
-   
+
 
     color: black;
-    filter: blur(0); 
+    filter: blur(0);
     opacity: 1;
-    top: calc(40% + 20px); 
-  }
+    top: calc(40% + 20px);
+}
 
-  /* github section */
+.project-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
 
- 
+.section {
+    flex: 0 0 100%;
+    /* Each section takes up 100% of the viewport width */
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    .git-heading {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-        margin-top: 40px;
-        align-items: center;
-        text-align: center;
-        color: var(--main-color);
-    }
-    .git_main-box {
-        max-width: 800px;
-        margin : 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .git_main-box img {
-        max-width: 100%;
-        height : 300px;
-        margin-top: 40px;
-    }
+.section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.section-content {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
 
-/* BREAKPOINTS */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 5px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.project-container::-webkit-scrollbar {
+    display: none;
+}
+
+.project-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* github section */
+.git_section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Heading style */
+.git-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.git-heading:active {
+    color: var(--highlight-color);
+    transform: scale(1.05);
+}
+
+.git_main-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.git_main-box img {
+    max-width: 45%;
+    height: auto;
+}
+
+.git_section>.git_main-box:last-of-type {
+    width: 100%;
+}
+
+.git_section>.git_main-box:last-of-type img {
+    width: 100%;
+    height: auto;
+}
+
+/*Breakpoint*/
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
+
 }
 
 @media (max-width: 991px) {
-    .header {
-        padding: 2rem 4%;
-    }
-
-    section {
-        padding: 10rem 4% 2rem;
-    }
-
-    .home {
-        padding: 0 4%;
-    }
-
-    .footer {
-        padding: 2rem 4%;
+    .btn-box {
+        display: flex;
     }
 }
+
+.header {
+    padding: 2rem 4%;
+}
+
+section {
+    padding: 10rem 4% 2rem;
+}
+
+.home {
+    padding: 0 4%;
+}
+
+.footer {
+    padding: 2rem 4%;
+}
+
 
 @media (max-width: 850px) {
     .animate.home-img {
@@ -1104,7 +1209,7 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 520px) {
-    html {
+    .html {
         font-size: 50%;
     }
 
@@ -1121,93 +1226,111 @@ section:nth-child(odd) .animate.scroll,
         width: 38px;
         height: 38px;
     }
-}
 
-@media (max-width: 462px) {
-    .home-content h1 {
-        font-size: 5.2rem;
+    .git_section {
+        padding: 10px;
+        margin:10%;
     }
-
-    .education {
-        padding: 10rem 4% 5rem 5%;
-    }
-
-    .contact form .input-box .input-field {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        margin-top: 2rem;
-        text-align: center;
-    }
-}
-
-@media (max-width: 371px) {
-    .home {
-        justify-content: center;
-    }
-
-    .home-content {
+    .git_main-box {
         display: flex;
-        align-items: center;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+
+
     }
 
-    .home-content h1 {
-        font-size: 5rem;
-    }
-}
-
-
-/* KEYFRAMES ANIMATION */
-@keyframes homeBgText {
-
-    0%,
-    10%,
-    100% {
-        background-position: -33rem 0;
-    }
-
-    65%,
-    85% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes homeCursorText {
-
-    0%,
-    10%,
-    100% {
-        width: 0;
-    }
-
-    65%,
-    78%,
-    85% {
+    .git_main-box img {
         width: 100%;
-        opacity: 1;
-    }
-
-    75%,
-    81% {
-        opacity: 0;
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 }
+    @media (max-width: 462px) {
+        .home-content h1 {
+            font-size: 5.2rem;
+        }
 
-@keyframes aboutSpinner {
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
+        .education {
+            padding: 10rem 4% 5rem 5%;
+        }
 
-@keyframes showRight {
-    100% {
-        width: 0;
+        .contact form .input-box .input-field {
+            width: 100%;
+        }
+
+        .footer {
+            flex-direction: column-reverse;
+        }
+
+        .footer p {
+            margin-top: 2rem;
+            text-align: center;
+        }
     }
-}
+
+    @media (max-width: 371px) {
+        .home {
+            justify-content: center;
+        }
+
+        .home-content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .home-content h1 {
+            font-size: 5rem;
+        }
+    }
+
+    /* KEYFRAMES ANIMATION */
+    @keyframes homeBgText {
+
+        0%,
+        10%,
+        100% {
+            background-position: -33rem 0;
+        }
+
+        65%,
+        85% {
+            background-position: 0 0;
+        }
+    }
+
+    @keyframes homeCursorText {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        65%,
+        78%,
+        85% {
+            width: 100%;
+            opacity: 1;
+        }
+
+        75%,
+        81% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes aboutSpinner {
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+
+    @keyframes showRight {
+        100% {
+            width: 0;
+        }
+    }
