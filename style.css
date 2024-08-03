@@ -43,7 +43,6 @@
     border: .2rem solid var(--main-color);
 }
 
-/* Show the image only when the screen size is at least 1024px */
 @media (min-width: 1024px) {
     .abut-img img {
         display: block;
@@ -190,6 +189,7 @@ section {
     justify-content: space-between;
     width: 34.5rem;
     height: 5rem;
+    padding:5px;
 }
 
 .btn-box .btn {
@@ -197,7 +197,7 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
+    width: 10rem;
     height: 100%;
     background: var(--main-color);
     border: .2rem solid var(--main-color);
