@@ -373,7 +373,7 @@ span {
 
 .about-content p {
     position: relative;
-    margin: 5%;
+    margin: 10%;
     font-size: calc(1rem + 1vw); 
     padding: 10px;     
 }
