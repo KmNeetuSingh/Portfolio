@@ -364,6 +364,7 @@ span {
 .about-content {
     text-align: center;
     padding: 20px;
+
 }
 @media only screen and (max-width: 600px) {
     .about-content {
@@ -394,9 +395,9 @@ span {
 
 .about-content p {
     position: relative;
-    margin: 10%;
-    font-size: calc(1rem + 1vw); 
-    padding: 30px;     
+    margin: 3 px;
+    font-size: 20px; 
+    padding: 3px;     
 }
 
 .btn-box.btns {
@@ -1316,7 +1317,6 @@ section {
             font-size: 5rem;
         }
     }
-
     /* KEYFRAMES ANIMATION */
     @keyframes homeBgText {
 

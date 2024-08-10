@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function downloadResume() {
 
-    var resumePath = 'https://drive.google.com/file/d/1DrFHkwztHpHOfy9sPBtv_l4hEgvMP0KN/view?usp=drive_link';
+    var resumePath = 'https://drive.google.com/file/d/1tUeirJmUH43RA_6xg6uKx2ZaTWPnfSBS/view?usp=sharing';
 
 
     var link = document.createElement('a');
