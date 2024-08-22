@@ -146,5 +146,16 @@ arrowButton.addEventListener('click', function (event) {
     });
 });
 
+const techItems = document.querySelectorAll('.tech-item');
+const techNameDisplay = document.getElementById('tech-name-display');
+
+techItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const techName = item.getAttribute('data-tech');
+        techNameDisplay.textContent = techName;
+    });
+});
+
+
 
 
