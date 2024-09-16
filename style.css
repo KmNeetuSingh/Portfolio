@@ -647,8 +647,8 @@ section:nth-child(odd) .animate.scroll,
 }
 .tech-item {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -688,7 +688,9 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 768px) {
-    .tech-item {
+    #tech-stack-container{
+        margin-left: 10%;
+    }    .tech-item {
         width: 150px; 
         height: 150px; 
     }
@@ -917,57 +919,6 @@ section:nth-child(odd) .animate.scroll,
 }
 
 /* For screens smaller than 768px */
-@media (max-width: 768px) {
-    .heading {
-        font-size: 3.5em;
-        margin-top: 15px;
-    }
-
-    .section-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section {
-        flex: 0 0 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-}
-
-/* For screens smaller than 480px */
-@media (max-width: 480px) {
-    .heading {
-        font-size: 3.5em;
-        text-align: start;
-    }
-
-    .section-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow-x: auto;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-    }
-
-    .section {
-        flex: 0 0 100%;
-        height: auto;
-        padding: 20px;
-        scroll-snap-align: start;
-        margin: 0 0 20px 0;
-        width: 100%;
-    }
-
-    .section img {
-        max-width: 80%; 
-    }
-
-    .dropdown {
-        width: 100%;
-    }
-}
 
 
 /* BREAKPOINTS */
