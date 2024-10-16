@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function downloadResume() {
   var resumePath =
-    "https://drive.google.com/file/d/1RxPpJ9fwu86vEefDAshYuyJWqCXmXZw7/view?usp=sharing";
+    "https://drive.google.com/file/d/1ScT9OzmTppVdHXoFztqYTqDXxoimuAuz/view?usp=sharing";
 
   var link = document.createElement("a");
   link.href = resumePath;
