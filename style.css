@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 
 * {
     margin: 0;
@@ -8,7 +9,6 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family:cursive;
 }
 
 :root {
@@ -27,6 +27,14 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 }
+ .scale-text {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .scale-text:hover {
+    transform: scale(1.05);
+  }
 
 .header {
     position: fixed;
